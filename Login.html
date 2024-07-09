@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel For You</title>
+    <link rel="icon" type="image/icon" href="/soloProject/img/OIP.jpg">
+    <link rel="stylesheet" href="/styling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img id="logo" src="./soloProject/img/travel-logo2.avif" alt="TravelForYou Logo">
+            </div>
+            <div class="nav-container">
+                <nav id="nav">
+                    <div>
+                        <div href="#">Home</div>
+                        <div href="#">Destinations</div>
+                        <div href="#">Tours</div>
+                        <div href="#">Hotels</div>
+                        <div href="#">Flights</div>
+                        <div href="#">Contact</div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="openModalBtn">Connection</button>
+        </div> 
+    </header>
+
+    <div id="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <div class="containerModal">
+                <div class="heading">Sign In</div>
+                <form action="" class="form">
+                    <input required="" class="input" type="email" name="email" id="email" placeholder="E-mail">
+                    <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
+                    <span class="forgot-password"><a href="#">Forgot Password?</a></span>
+                    <input class="login-button" type="submit" value="Sign In" onclick="alert('Sign in succeded!')">
+                </form>
+                <div class="social-account-container">
+                    <span class="title">Or Sign in with</span>
+                    <div class="social-accounts">
+                        <button class="social-button google">
+                            <img class="social" src="./soloProject/img/google.png" alt="Google">
+                        </button>
+                        <button class="social-button apple">
+                            <a href="https://www.facebook.com/traveltodo.tn/">
+                                <img class="social" src="./soloProject/img/facebook.jpg" alt="Facebook">
+                            </a>
+                        </button>
+                        <button class="social-button twitter">
+                            <a href="https://www.instagram.com/traveltodo/">
+                                <img class="social" src="./soloProject/img/instagram.jpg" alt="Instagram">
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="hero">
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="/soloProject/img/egypttt.jpg" class="full-page-image" >
+                <div class="text">Explore the world with Travel ForYou and discover unforgettable experiences.</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="/soloProject/img/Bodrum.jpg" class="full-page-image">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="/soloProject/img/istanbul3.jpg" class="full-page-image">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </section> 
+    <div class="container1">
+        <h2 class="text-center">Our 5 guaranteed</h2>
+        <div class="div-contaiener1">
+            <div class="proximiti">
+                <div class="div-img">
+                    <img src="/soloProject/img/prox.png" alt="TravelForYou Online Travel Agency Best Price in Tunisia">
+                    <p>Proximity to customers: 34 points of sale throughout Tunisia</p>
+                </div>
+            </div>
+            <div class="call-center">
+                <div class="div-img1">
+                    <img src="/soloProject/img/call-center.png" alt="Travel ForYou Online Travel Agency Best Price in Tunisia">
+                    <p>A call centre that is always attentive to our customers, even during periods of high traffic.</p>
+                </div>
+            </div>
+            <div class="tarif">
+                <div class="div-img2">
+                    <img src="/soloProject/img/tarifs.png" alt="Travel ForYou Online Travel Agency Best Price in Tunisia">
+                    <p> The most attractive rates on the market (including VAT) </p>
+                </div>
+            </div>
+            <div class="offers">
+                <div class="div-img3">
+                    <img src="/soloProject/img/offre.png" alt="Travel ForYou Online Travel Agency Best Price in Tunisia">
+                    <p>More than 884,000 hotels worldwide.</p>
+                </div>
+            </div>
+            <div class="experiences">
+                <div class="div-img4">
+                    <img src="/soloProject/img/experience.png" alt="Travel ForYou Online Travel Agency Best Price in Tunisia">
+                    <p>More than 18 years of experience in the market</p>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+</div>
+</div>
+    <div class="pub">
+        <img src="/soloProject/img/drivee1.jpg" alt="publiciti">
+    </div>
+
+    <div id="destinations">
+        <div class="popular"> 
+            <h2 class="text-text">Popular Destinations</h2>
+        </div>
+        <div class="container">
+            <div class="destination-cards">
+                <div class="destination-card">
+                    <img src="/soloProject/img/paris.jpg" alt="Destination 1">
+                    <h3>Paris, France</h3>
+                    <p>Experience the romance of Paris with its iconic landmarks and cuisine.</p>
+                    <button href="#" class="btn">Learn More</button>
+                </div>
+                <div class="destination-card">
+                    <img src="/soloProject/img/bali3.jpg" alt="Destination 2">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Relax on the stunning beaches of Bali and immerse yourself in new culteur.</p>
+                    <button href="#" class="btn">Learn More</button>
+                </div> 
+                <div class="destination-card">
+                    <img src="/soloProject/img/Antalya.jpg" alt="Destination 4">
+                    <h3>Antalya</h3>
+                    <p>Antalya is one of our favorite regions in Turkey because it's lovely.</p>
+                    <button href="#" class="btn">Learn More</button>
+                </div>
+                <div class="destination-card">
+                    <img src="/soloProject/img/R.jpg" alt="Destination 5">
+                    <h3>Marocco</h3>
+                    <p>We have great offers for daily, weekly and long term rentals in Morocco.</p>
+                    <button href="#" class="btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2>Useful Information</h2>
+                <a href="#">Who are we?</a><br>
+                <a href="#">Terms of Sale</a><br>
+                <a href="#">Points of Sale</a><br>
+                <a href="#">Blog</a>
+            </div>
+            <div class="footer-column">
+                <h2>Contact</h2>
+                <p>Adresse : Riadh L'Andalos/Ariena</p>
+                <p>Phone : +(216) 90 100 150</p>
+                <p>Fax : +(216) 72 159 753</p>
+                <p>Email : <a href="mailto:contact@travelforyou.com">contact@travelforyou.com</a></p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Travel ForYou. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
